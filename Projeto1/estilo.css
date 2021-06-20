@@ -23,6 +23,12 @@ body{
     font-size: 46px;
     text-shadow: 3px 3px 2px #333;
 }
+.hero-content p{
+    background-color: rgba(0, 0, 0, .7);
+    display:inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
 
 .hero nav li{
     display: inline-block;
@@ -67,4 +73,26 @@ footer{
     padding: 15px;
     text-align: center;
     text-shadow: 3px 3px 2px #333;
+}
+.card{
+    width: 32%;
+    float: left;
+    margin-left: 1%;
+
+}
+.content-section{
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto;
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+.card p {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin: 0;
+  
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 80%;
+            padding: 15px;
+            background: #ccc;
+            overflow: auto; /* para preechimento dentro das divs*/
+        }
+        .container div{
+            width: 150px;
+            height: 50px;
+            border: 2px solid red;
+            margin: 5px;
+        }
+        .div1{
+            float: left;
+        }
+        .div2{
+            float: left;
+        }
+        .div3{
+            float: left;
+        }
+        header{
+            height: 50px;
+            background-color: #CCC;
+        }
+        nav{
+            width: 25%;
+            height: 50px;
+            background: orange;
+            float: left;
+
+        }
+        main{
+            width: 70%;
+            height: 100px;
+            background-color: yellow;
+            float: right;
+
+        }
+        footer{
+            height: 50px;
+            background-color: blue;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float</h1>
+    <div class="container">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+    </div>
+    <hr>
+    <header>header</header>
+    <nav>nav</nav>
+    <main>main</main>
+    <footer>footer</footer>
+</body>
+</html>
