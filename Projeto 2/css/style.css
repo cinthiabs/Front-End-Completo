@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.principal {
+    width: 70%;
+    margin: auto;
+
+}
+nav{
+    padding: 5px;
+    background-color: rgb(4, 45, 63);
+    
+}
+
+nav img {
+    float: left;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+ul{
+    text-align: right;
+}
+
+.header{
+    margin: 10px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px  0 0;
+    color: rgb(199, 196, 193);
+    letter-spacing:2px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.img {
+    width: 100%;
+}
+.portifolio h2{
+    margin-top:50px;
+    text-align: center;
+}
+.portifolio p {
+    color: rgb(119, 117, 117);
+    line-height: 30px;
+    text-align: center;
+    margin:35px;
+}
+.Gallery{
+    width: 90%;
+    margin: auto;
+
+}
+.Gallery div{
+    width: 25%;
+    margin:20px;
+
+    float: left;
+    text-align: center;
+
+
+}
+.Gallery div img{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
+.sub{
+ display: inline;
+}
+.titulo {
+    letter-spacing:3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    display: inline;
+    text-align: center;
+    
+}
+.About{
+    clear: both;
+}
+.About{
+    width: 100%;
+    right: 60px;
+    padding: 60px 0 60px 0;
+    background-image:url(../imagens/bg_detalhe.png);
+    background-size: cover;
+    background-position: right;
+    color: white;
+    
+}
+.tituloPrincipal{
+    text-transform: uppercase;
+    padding-left: 40px;
+    font-size: 35px;
+    font-weight: 100;
+
+}
+.About p {
+    padding-left: 40px;
+    display: inline-block;
+    width: 60%;
+    padding: auto;
+    letter-spacing:3px;
+
+}
+.Contact{
+  padding: 40px 0 40px 0;
+}
+.ContactTitulo{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(4, 45, 63);
+}
+footer{
+    padding: 5px;
+    background-color: rgb(4, 45, 63);
+    text-align: center;
+    color:white;
+    font-size: 12px;
+    letter-spacing:3px;
+    text-transform: uppercase;
+}
