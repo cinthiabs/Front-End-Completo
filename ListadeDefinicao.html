@@ -1,0 +1,56 @@
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cinthia">
+        <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
+        <meta name="keywords" content="palavas chaves">
+        <style>
+          li ul{
+               height: 0;
+               overflow: hidden;
+               transition:height .5s; ;/*animação*/
+            }
+            li:hover{
+                background-color: #ccc;
+            }
+            li:hover ul{
+                height: 50px; /*animação*/
+            }
+        </style>
+    </head>
+ 
+    <body>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Item 2.1</li>
+                    <li>Item 2.2</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+        <hr>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Liguagem de Marcação</dd>
+            <dt>CSS</dt>
+            <dd>Liguagem para criação de folhas de estilos.S</dd>
+
+        </dl>
+        <hr>
+        <dl>
+            <dt>WWW</dt>
+            <dt>Internet</dt>
+            <dd>Rede mundial de computadores</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Linguagem script para Internet</dd>
+            <dd>Script para o browser</dd>
+        </dl>
+
+    </body>
+</html>

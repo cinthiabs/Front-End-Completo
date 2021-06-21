@@ -35,6 +35,10 @@ li{
     text-transform: uppercase;
     font-size: 13px;
 }
+li:hover{
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}
 .img {
     width: 100%;
 }
