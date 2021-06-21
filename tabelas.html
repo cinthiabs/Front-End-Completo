@@ -5,9 +5,81 @@
         <meta name="author" content="Cinthia">
         <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
         <meta name="keywords" content="palavas chaves">
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            table{
+                border-collapse: collapse;
+                width: 80%;
+                margin: auto;
+                background-color: beige;
+            }
+            th{
+                background: chocolate;
+                color: white;
+            }
+            td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 5px;
+            }
+        </style>
     </head>
  
     <body>
+        <table>
+            <caption>Tabela de Preços de cursos</caption>
+            <thead>
+                <tr>
+                    <th>Area</th>
+                    <th>Curso</th>
+                    <th>Investimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Design</td>
+                    <td>InDesign</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>Photoshop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>Illustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Development</td>
+                    <td>HTML</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>CSS</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>JavaScript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>PHP</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Valores sujeitos a alterações sem aviso previo.</td>
+                </tr>
+            </tfoot>
+        </table>
 
     </body>
 </html>
