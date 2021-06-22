@@ -1,0 +1,79 @@
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cinthia">
+        <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
+        <meta name="keywords" content="palavas chaves">
+
+    </head>
+ 
+    <body>
+        <form action="#" method="POST" class="formLogin">
+            
+           <fieldset>
+               <legend>Dados Pessoais</legend>
+             <label for="">Email</label>
+             <input type="email" Required placeholder="Digite um e-mail valido">
+             <br>
+             <label for="">Numero de filhos:</label>
+            <input type="number" min="0" max="50" name="" id="">     
+            <br>
+            <label for="">Telefone:</label>
+            <input type="tel" min="0" max="50" name="" id="">     
+            <br>
+            <label for="">Nascimento</label>
+            <input type="date">
+            <br>
+            <p>Sexo:</p>
+            <label for="">Masculino</label>
+            <input type="radio" name="sexo" id="" Required>
+            <label for="">Feminino</label>
+            <input type="radio" name="sexo" id="" Required>
+            <br>
+            <label for="">Estado</label>
+            
+            <select name="Estado" id="">
+                <Option value="0">Selecione</Option>
+                <Option value="SP">São Paulo</Option>
+                <Option value="RJ">Rio de Janeiro</Option>
+                <Option value="MG">Minas Gerais</Option>
+               
+
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Area de interesse</legend>
+         <label>
+            <input type="checkbox" name="HTML" value="html"> HTML
+        </label>
+        <label>
+            <input type="checkbox" name="CSS" value="CSS"> CSS
+        </label>
+        <label>
+            <input type="checkbox" name="js" value="js"> JavaScript
+        </label>
+        <br>
+        <label for="">Anexar Curriculo </label>
+            <input type="file">
+       
+        
+
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" style="resize:none" id="" cols="30" rows="10"></textarea>
+            <br>
+            <textarea name="Contrato" style="resize:none" id="" cols="30" rows="10" readonly>Aqui entra o texto do Contrato que precisa
+            ser aceito.</textarea>
+            <label for=""><input type="checkbox" Required>Li e aceito.</label>
+
+
+        </fieldset>
+            <input type="submit" value="Enviar">   
+            <input type="reset" value="Reset">         
+          
+        </form>
+    </body>
+</html>
