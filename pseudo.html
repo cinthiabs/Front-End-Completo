@@ -1,0 +1,56 @@
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cinthia">
+        <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
+        <meta name="keywords" content="palavas chaves">
+        <style>
+            input[type="checkbox"]{
+                width: 50px;
+                height: 50px;
+
+            }
+            input[type="checkbox"]:checked{
+                width: 20px;
+                height: 20px;
+            }
+            button:disabled{
+                background-color: red;
+            }
+            p{
+                color: blue;
+            }
+            p:empty::before{
+                content: "Paragrafo vazio";
+            }
+            input[type="text"]:focus{
+                background: #ccc;
+            }
+            input[type="text"]:read-only{
+                background: yellow;
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <label for=""><input type="checkbox" value="sim"> Aceito o contrato</label> 
+        <button>Entrar</button>
+        <button disabled>Voltar</button>
+      
+        <p>Paragrafo 2</p>
+        <p> </p>
+        <p></p>
+        <hr>
+        <input type="text">
+        <input type="text" value="Valor inicial">
+        <input type="text" value="Valor inicial" readonly>
+        <input type="text" value="Valor inicial" disabled>
+        <input type="text"placeholder="valor do placeholder">
+      
+
+        <div tabindex="1">div 1</div>
+        <div  tabindex="1">div 2</div>
+        <div  tabindex="1">div 3</div>
+    </body>
+</html>

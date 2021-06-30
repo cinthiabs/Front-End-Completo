@@ -17,10 +17,20 @@
                 color: orange;
                 margin: 5px;
             }
+            div{
+                border: 2px solid red;
+            }
+            div::before{
+                content: "Before: ";
+            }
+            div::after{
+                content: "Depois  ";
+            }
         </style>
     </head>
  
     <body>
+        <div>Texto principal da DIV</div>
         <article>
             <h3>
                 Titulo
