@@ -6,7 +6,8 @@
 }
 :root{
     --body-color:#efefef;
-    --nav-color:#1876f2;
+    --nav-color:#efefef;
+   
     --bg-color:#fff;
 }
 .dark-theme{
@@ -23,7 +24,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:var( --nav-color);
+    background:var( --bg-color);
     padding: 5px 5%;
     position: sticky;
     top: 0;
@@ -31,7 +32,7 @@ nav{
 
 }
 .logo{
-    width: 160px;
+    width: 40px;
     margin-right: 45px;
 }
 .nav-left, .nav-right{
@@ -39,9 +40,16 @@ nav{
     align-items: center;
 
 }
+.nav-left ul{
+    background: var(--nav-color);
+    border-radius: 5px;
+    padding: 5px
+
+}
 .nav-left ul li{
     list-style: none;
     display: inline-block; /*coloca um item do lado do outro*/
+  
 }
 .nav-left ul li img{
     width: 28px;
@@ -301,8 +309,8 @@ nav{
 
 }
 .user-profile p{
-    margin-bottom: -5px;
-    font-weight: 500;
+    margin-bottom: -2px;
+    font-weight: 520;
     color: #626262;
 
 }
@@ -312,10 +320,11 @@ nav{
 }
 
 .post-input-container{
-    padding-left: 55px;
-    padding-top:20px;
+    padding-left: 30px;
+    padding-top:10px;
 
 }
+/*
 .post-input-container textarea{
     width: 100%;
     border:0;
@@ -323,6 +332,20 @@ nav{
     border-bottom: 1px solid #ccc;
     background: transparent;
     resize: none;
+}*/
+.post-input-container textarea{
+    background-color: #efefef;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    resize: none; 
+}
+.hr{
+   
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    margin-top: 10px;
 }
 .add-post-links{
     display: flex;
