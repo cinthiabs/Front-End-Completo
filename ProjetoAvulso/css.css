@@ -29,22 +29,26 @@ nav{
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 10px 0 5px rgb(99, 99, 99);
+   
 
 }
 .logo{
     width: 40px;
     margin-right: 45px;
 }
+
+
 .nav-left, .nav-right{
     display: flex;
     align-items: center;
 
 }
-.nav-left ul{
+.nav-left ul li{
     background: var(--nav-color);
-    border-radius: 5px;
-    padding: 5px
-
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: 10px;
 }
 .nav-left ul li{
     list-style: none;
@@ -53,7 +57,7 @@ nav{
 }
 .nav-left ul li img{
     width: 28px;
-    margin: 0 15px;
+    margin: 0 2px;
 }
 .nav-user-icon img{
     width: 40px;
