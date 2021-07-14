@@ -1,0 +1,86 @@
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cinthia">
+        <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
+        <meta name="keywords" content="palavas chaves">
+        <style>
+             #grupo-cores{
+                 padding: 15px;
+                 background: url(imagens/bg.jpg);
+                 counter-reset: contador;
+             }
+            #grupo-cores div{
+                width: 400px;
+                height: 150px;
+                margin: 20px auto;
+                border: 10px solid rgba(0,0,0,.5);
+                padding: 15px;
+                counter-increment: contador;
+            }
+            #grupo-cores div::before{
+                content: '['counter(contador)']';
+            }
+            #grupo-cores div:nth-child(2){
+                background-color: blueviolet;
+                background-clip: padding-box;
+            }
+            #grupo-cores div:nth-child(3){
+                background-color: rgba(50%,50%,0%,.5);
+                background-clip: padding-box;
+            }
+            #grupo-cores div:nth-child(4){
+                background-color: hsl(0deg, 50%, 50%);
+                background-clip: padding-box;
+            }
+            #grupo-cores div:nth-child(1){
+                background-image: linear-gradient(blue, red,transparent);
+                background-clip: content-box;
+                color: white;
+            }
+            #grupo-cores div:nth-child(5){
+                background-image: radial-gradient( circle, red,blue);
+
+            }
+
+        </style>
+    </head>
+ 
+    <body>
+    <h2>Backgrounds,cores e gradientes</h2>
+    <p>Names, hexadecimais,RGB, RGBa,HSL,HSLa</p>
+
+    <div id="grupo-cores">
+        <div class="cores">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci dignissimos harum. 
+                Laborum, nihil, architecto, vitae ducimus rerum libero nisi adipisci nostrum quos modi aliquam odit esse!
+                 In, debitis excepturi.</p>
+        </div>
+
+        <div class="cores">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci dignissimos harum. 
+                Laborum, nihil, architecto, vitae ducimus rerum libero nisi adipisci nostrum quos modi aliquam odit esse!
+                 In, debitis excepturi.</p>
+        </div>
+
+        <div class="cores">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci dignissimos harum. 
+                Laborum, nihil, architecto, vitae ducimus rerum libero nisi adipisci nostrum quos modi aliquam odit esse!
+                 In, debitis excepturi.</p>
+        </div>
+
+        <div class="cores">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci dignissimos harum. 
+                Laborum, nihil, architecto, vitae ducimus rerum libero nisi adipisci nostrum quos modi aliquam odit esse!
+                 In, debitis excepturi.</p>
+        </div>
+        <div class="cores">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci dignissimos harum. 
+                Laborum, nihil, architecto, vitae ducimus rerum libero nisi adipisci nostrum quos modi aliquam odit esse!
+                 In, debitis excepturi.</p>
+        </div>
+        
+    </div>
+    </body>
+</html>
