@@ -1,0 +1,47 @@
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cinthia">
+        <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
+        <meta name="keywords" content="palavas chaves">
+        <style>
+            .flexbox{
+                height: 250px;
+                border:1px solid red;
+                display: flex;
+                flex-flow: row wrap;
+                margin-bottom: 15px;
+            }
+            .flexbox div{
+                background-color: orange;
+                width:300px;
+                margin: 15px;
+            }
+            .flexbox:nth-child(5){
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+ 
+    <body>
+    <h1>Display Flex</h1>
+
+    <p>Acomodar ou distribuir elementos de modo facil</p>
+    <p>Ajuda a centralizar na vertical</p>
+
+    <div class="flexbox">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    </body>
+</html>
