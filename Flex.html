@@ -1,0 +1,62 @@
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cinthia">
+        <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
+        <meta name="keywords" content="palavas chaves">
+        <style>
+            .cardContainer{
+                display: flex;
+            }
+            .cardflex{
+                border:1px solid black;
+                width: 30%;
+                padding: 10px;
+                margin: 1%;
+                display: flex;
+                flex-direction: column;
+              
+            }
+            .cardflex p{
+                flex-grow: 1;
+            }
+            .cardflex button{
+                align-self: flex-end;
+                padding: 5px;
+            }
+        </style>
+    </head>
+ 
+    <body>
+    <h2>Display Flex</h2>
+    <p>Acomodar ou distribuir elementos de modo facil</p>
+    <p>Ajuda a centralizar na vertical</p>
+
+    <section class="cardContainer">
+        <article class="cardflex">
+            <h3>titulo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Ad quidem laborum laboriosam temporibus error? Pariatur quasi impedit quidem. 
+                 Recusandae reiciendis numquam iste hic quisquam eius, eos fugit provident exercitationem mollitia?</p>
+                <button>Button</button>
+        </article>
+
+        <article class="cardflex">
+            <h3>titulo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Ad quidem laborum laboriosam temporibus error? Pariatur quasi impedit quidem. 
+                 Recusandae reiciendis numquam iste hic quisquam eius, eos fugit provident exercitationem mollitia?</p>
+                <button>Button</button>
+        </article>
+
+        <article class="cardflex">
+            <h3>titulo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Ad quidem laborum laboriosam temporibus error? Pariatur quasi impedit quidem. 
+                 Recusandae reiciendis numquam iste hic quisquam eius, eos fugit provident exercitationem mollitia?</p>
+                <button>Button</button>
+        </article>
+    </section>
+    </body>
+</html>
