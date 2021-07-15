@@ -5,9 +5,44 @@
         <meta name="author" content="Cinthia">
         <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
         <meta name="keywords" content="palavas chaves">
+        <style>
+            .gridContainer{
+                width: 300px;
+                background-color: #ccc;
+            }
+            .gridItem{
+                background-color: #999;
+                font-size: 3em;
+                font-family: sans-serif;
+                padding: 5px 15px;
+            }
+            .gridItem:nth-child(even){
+                background-color: #999;
+                color: white;
+            }
+            .gridItem:nth-child(odd){
+                background-color: #666;
+              
+            }
+            /*GRID*/
+            .gridContainer{
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px;
+            }
+        </style>
     </head>
  
     <body>
 
+        <h2>Grid Layout</h2>
+        <div class="gridContainer">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
     </body>
 </html>
