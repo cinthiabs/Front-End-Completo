@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div efeitos</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    
+    
+}
+.container div{
+    background-color: rgb(253, 194, 30);
+    color: black;
+    margin: 10px;
+    width: 20%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.container h3{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 25%;
+}
+.container div:hover:nth-child(1){
+    background-color: aliceblue;
+    border: 1px solid cyan;
+
+}
+.container div:hover:nth-child(2){
+    background-color: black;
+    color: white;
+}
+.container div:hover:nth-child(3){
+    background-color: lightcoral;
+    color: white;
+    transition: .3s;
+}
+.container div:hover:nth-child(4){
+    background-color: rgb(121, 89, 89);
+    color: white;
+    transition: .3s;
+    transform: translate(10px,10px);
+}
+.container div:hover:nth-child(5){
+    transition: .3s;
+   background-color:white;
+   color: white;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div><h3>Botao 1</h3></div>
+        <div><h3>Botao 1</h3></div>
+        <div><h3>Botao 1</h3></div>
+        <div><h3>Botao 1</h3></div>
+        <div><h3>Botao 1</h3></div>
+    </div>
+</body>
+</html>
