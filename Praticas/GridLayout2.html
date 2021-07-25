@@ -1,0 +1,66 @@
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Cinthia">
+        <meta name="description" content="descricao da pagina para mecanismos de buscas"> 
+        <meta name="keywords" content="palavas chaves">
+    
+        <style>
+            .gridcontainer{
+                width: 90%;
+                background-color: #ccc;
+                margin: 30px auto;
+
+            }
+            .gridItem{
+                background-color: orange;
+                padding: 15px;
+                font-family: sans-serif ;
+            }
+            /*GRID*/
+            .gridcontainer{
+                display: grid;
+                grid-template-columns:repeat(3,1fr);
+                grid-gap: 20px;
+                grid-template-rows: 100px 50px 1fr 50px;
+
+                grid-template-areas: "header header header" "nav nav aside" "main main aside" "footer footer aside";
+            }
+            .header{
+               grid-area: header;
+            }
+            .nav{
+                grid-area: nav;
+            }
+            .aside{
+                grid-area: aside;
+            }
+            .main{
+                grid-area: main;
+                min-height: 200px;
+            }
+            .footer{
+                grid-area: footer;
+            }
+        </style>
+    
+    </head>
+ 
+    <body>
+
+        <h2>Grid Layout</h2>
+
+        <div class="gridcontainer">
+            <header class="header gridItem">Header</header>
+            <nav class="nav gridItem">Nav</nav>
+            <aside class="aside gridItem">Aside</aside>
+            <main class="main gridItem">
+                main
+            </main>
+            <footer class="footer gridItem"></footer>
+
+
+        </div>
+    </body>
+</html>
