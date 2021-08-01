@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Facebook </title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="https://kit.fontawesome.com/c4254e24aB.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="index.html"> <img src="img/logo.png" class="logo"  alt=""></a>
+            <ul>
+                <li><img src="img/notification.png"  alt=""></li>
+                <li><img src="img/inbox.png" alt=""></li>
+                <li><img src="img/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="img/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="img/profile-pic.jpg" alt="">
+                
+            </div>
+
+        </div>
+ <!----------  settings-menu   ------------>
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+                <div class="settings-menu-inner">
+                        <div class="user-profile">
+                            <img src="img/profile-pic.jpg" alt="">
+                            <div>
+                                <p>Cinthia Barbosa</p>
+                                <a href="#">See your profile</a>
+                            </div>
+                        </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="img/feedback.png" alt="">
+                        <div>
+                            <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="settings-links">
+                        <img src="img/setting.png" class="settings-icon" alt="">
+                        <a href="#">Settings & Privacy <img src="img/arrow.png" width="10px" alt=""></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="img/help.png" class="settings-icon" alt="">
+                        <a href="#">Help & Support <img src="img/arrow.png" width="10px" alt=""></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="img/display.png" class="settings-icon" alt="">
+                        <a href="#">Display & Accessibity <img src="img/arrow.png" width="10px" alt=""></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="img/logout.png" class="settings-icon" alt="">
+                        <a href="#">Logout <img src="img/arrow.png" width="10px" alt=""></a>
+                    </div>
+                </div>
+        </div>
+    </nav>
+
+    <!--Perfil-->
+    <div class="profile-container">
+        <img src="images/cover.png"  class="cover-img" alt="">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="img/profile-pic.jpg" class="pd-img" alt="">
+                    <div>
+                        <h3>Cinthia Barbosa</h3>
+                        <p>120 Friends - 20 Mutual</p>
+                        <img src="images/member-1.png" alt="">
+                        <img src="images/member-2.png" alt="">
+                        <img src="images/member-3.png" alt="">
+                        <img src="images/member-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="images/add-friends.png" alt=""> Friend</button>
+                <button type="button"><img src="images/message.png" alt=""> Message</button>
+                <br>
+                <a href=""><img src="images/more.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Believe in yourself and you can do unbulievable things.
+                        <img src="images/feeling.png" alt="">
+                    </p>
+                    <hr>
+                    <ul>
+                        <li><img src="images/profile-job.png" alt=""> Director at 99media Ltd</li>
+                        <li><img src="images/profile-study.png" alt=""> Studied at Amity University</li>
+                        <li><img src="images/profile-study.png" alt=""> Went to DPS Delhi</li>
+                        <li><img src="images/profile-home.png" alt=""> Lives in Babgalore, India</li>
+                        <li><img src="images/profile-location.png" alt=""> From Bangalore, India</li>
+
+                    </ul>
+                </div>
+
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="">All Photos</a>
+                    </div>
+                    <div class="photo-box">
+                        <div><img src="images/photo1.png" alt=""></div>
+                        <div><img src="images/photo2.png" alt=""></div>
+                        <div><img src="images/photo3.png" alt=""></div>
+                        <div><img src="images/photo4.png" alt=""></div>
+                        <div><img src="images/photo5.png" alt=""></div>
+                        <div><img src="images/photo6.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="">All Friends</a>
+                    </div>
+                    <p>120 (10 mutual)</p>
+                    <div class="friends-box">
+                        <div><img src="images/member-1.png" alt=""></div>
+                        <div><img src="images/member-2.png" alt=""></div>
+                        <div><img src="images/member-3.png" alt=""></div>
+                        <div><img src="images/member-4.png" alt=""></div>
+                        <div><img src="images/member-5.png" alt=""></div>
+                        <div><img src="images/member-6.png" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.jpg" alt="">
+                        <div class="texto">
+                            <p>Cinthia Barbosa</p>
+                            <small>Public <i class="fas fa-sort-down"></i></small>
+                        </div>
+                    </div>
+    
+                    <div class="post-input-container">
+                            <textarea rows="1" placeholder="What's on your mind, Cinthia?"></textarea>
+                           <div class="hr"></div>
+                        <div class="add-post-links">
+                            <a href="#"><img src="img/live-video.png" alt="">Live Video</a>
+                            <a href="#"><img src="img/photo.png" alt="">Photo/Videio</a>
+                            <a href="#"><img src="img/feeling.png" alt="">Feling/Activity</a>
+                        </div>
+                    </div>
+
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="img/perfil.png" alt="">
+                                <div class="texto">
+                                    <p>Microsoft</p>
+                                    <small>June 24 2021, 13:40 pm</small>
+                                </div>
+                            </div>
+                            <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                       
+                        <p class="post-text">Por meio da iniciativa <a href="#">#MicrosoftMaisBrasil</a>, lançamos diversos programas de capacitação e recolocação profissional. 
+                            Um deles foi a parceria com o Ministério da Economia para a modernização do Sistema Único de Emprego que agora conta com atendimento
+                             individualizado e focado nas dificuldades individuais do trabalhador. </p>
+                        <img src="img/feed-image-2.png"  class="post-img"alt="">
+                        
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="img/like-blue.png">120</div>
+                                <div><img src="img/comments.png">45</div>
+                                <div><img src="img/share.png">20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="img/profile-pic.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="img/profile-pic.jpg" alt="">
+                                <div class="texto">
+                                    <p>Cinthia Barbosa</p>
+                                    <small>June 24 2021, 13:40 pm</small>
+                                </div>
+                            </div>
+                            <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                       
+                        <p class="post-text">Fotos e Videos com amigos.</p>
+                        <img src="img/feed-image-1.png"  class="post-img"alt="">
+                        
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="img/like-blue.png">120</div>
+                                <div><img src="img/comments.png">45</div>
+                                <div><img src="img/share.png">20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="img/profile-pic.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="img/profile-pic.jpg" alt="">
+                                <div class="texto">
+                                    <p>Cinthia Barbosa</p>
+                                    <small>June 24 2021, 13:40 pm</small>
+                                </div>
+                            </div>
+                            <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                       
+                        <p class="post-text">Fotos e Videos com amigos.</p>
+                        <img src="img/feed-image-3.png"  class="post-img"alt="">
+                        
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="img/like-blue.png">120</div>
+                                <div><img src="img/comments.png">45</div>
+                                <div><img src="img/share.png">20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="img/profile-pic.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="img/profile-pic.jpg" alt="">
+                                <div class="texto">
+                                    <p>Cinthia Barbosa</p>
+                                    <small>June 24 2021, 13:40 pm</small>
+                                </div>
+                            </div>
+                            <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                       
+                        <p class="post-text">Fotos e Videos com amigos.</p>
+                        <img src="img/feed-image-4.png"  class="post-img"alt="">
+                        
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="img/like-blue.png">120</div>
+                                <div><img src="img/comments.png">45</div>
+                                <div><img src="img/share.png">20</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="img/profile-pic.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    
+    
+    </div>
+
+    <!--Perfil-->
+
+    <div class="footer">
+        <p>Copyright 2021  -  Cinthia Barbosa</p>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
