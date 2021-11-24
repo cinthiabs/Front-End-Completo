@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica 7</title>
+</head>
+<body>
+    <script>
+        
+        //fazer jogador1 digitar um numero
+        var nJogador1 = prompt('Numero do jogador 1');
+        nJogador1 = parseInt(nJogador1);
+
+        //fazer jogador2 digitar outro numero
+        var nJogador2 = prompt('Numero do jogador 2');
+        nJogador2 = parseInt(nJogador2);
+
+        // se forem iguais, mostrar mensagem "empate"
+        if (nJogador1 === nJogador2){
+            alert('Vocês empataram');
+        }else{
+        //sortear um numero entre 0 e 1
+            var nSorteado =  parseInt(Math.random()*2);
+        // se o numero sorteado for = 0, ganha quem escolher  o numero menor
+            if (nSorteado === 0){
+                if(nJogador1 < nJogador2){
+                    alert('Ganhou o Jogador 1')
+                }else{
+                    alert('Ganhou o Jogador 2')
+                }
+            }
+            else{
+                if(nJogador1 > nJogador2){
+                    alert('Ganhou o jogador 1')
+                }else{
+                    alert('Ganhou o jogador 2')
+                }
+            }
+        //se o  numero sorteado for 1 , ganha quem escolher o numero maior
+        }
+
+        
+    </script>
+</body>
+</html>

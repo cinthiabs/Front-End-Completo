@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Funções</h1>
+    <button onclick="MostrarTabuada()">Criar Tabuada</button>
+    <button onclick="LimparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+    <script>
+        
+        var output = document.querySelector('#output')
+        var mensagem = '';
+
+        function MostrarTabuada(){
+            
+            LimparTabuada();
+
+            //perguntar o numero para o usuario
+            var n = prompt ('Digite um número');
+            
+            //converter o numero
+            n = parseFloat(n)
+            
+            //criar uma variavel  que servira de indice
+            var i = 1;
+
+            //enquanto indice < = 1000
+            // concatena na variavel mensagem
+            while(i <= 1000){
+                mensagem += n+' x '+i+'= '+(n*i)+'<br>';
+                i++;
+            }
+            //mostrar mensagem no output
+            output.innerHTML = mensagem;
+
+        }
+        function LimparTabuada(){
+            mensagem='';
+            output.innerHTML = mensagem;
+        }
+
+
+    </script>
+</body>
+</html>
