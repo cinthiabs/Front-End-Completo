@@ -17,11 +17,13 @@
         var nJogador2 = prompt('Numero do jogador 2');
         nJogador2 = parseInt(nJogador2);
 
+        //=== igual
         // se forem iguais, mostrar mensagem "empate"
         if (nJogador1 === nJogador2){
             alert('Vocês empataram');
         }else{
-        //sortear um numero entre 0 e 1
+          //random = numero aleatorio  
+          //sortear um numero entre 0 e 1
             var nSorteado =  parseInt(Math.random()*2);
         // se o numero sorteado for = 0, ganha quem escolher  o numero menor
             if (nSorteado === 0){

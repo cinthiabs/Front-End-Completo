@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        //Arrays = Conjunto de dados agrupados
+        //innerhtml = escreve na tela html
+        //push = adicionar dados no array 
+        //lenght = retorna a quantidade de itens dentro do Array
+        
+        var produtos = new Array('caneta','lapis','tesoura','borracha','caderno','livro');
+
+        produtos.push('compasso','cartolina');
+        var output = document.querySelector('#output');
+        output.innerHTML = produtos.toString();
+
+        var msg ='';
+        for(var i = 0; i < produtos.length; i++){
+            msg += 'produto '+ (i+1) +': '+ produtos[i] + '<br>';
+
+        }
+        output.innerHTML = msg;
+
+    </script>
+</body>
+</html>
