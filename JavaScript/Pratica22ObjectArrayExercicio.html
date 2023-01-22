@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Array Exercicio</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var msg="";
+        var Pessoa = [{"nome":"Cinthia","email":"cinthia@gmal.com"},
+        {"nome":"Joao","email":"joao@gmal.com"},
+        {"nome":"Maria","email":"maria@gmail.com"}]
+
+        for(var i = 0; i <Pessoa.length; i++){
+            msg += "Nome: "+Pessoa[i].nome+ " Email: "+Pessoa[i].email+"<br>";
+        }
+       document.querySelector('#output').innerHTML = msg;
+    </script>
+</body>
+</html>

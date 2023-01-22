@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        //exercicio, mostra na tela todos os dados de um produto, 
+        //contendo quantidade e preco agrupados por um objeto
+        var Produto = new Object();
+        Produto.nome = 'Caneta',
+        Produto.quantidade = 5,
+        Produto.preco = 2.0;
+
+        //this = referencia para o proprio objeto.
+        Produto.comprar = function(){
+            this.quantidade--;
+            console.log(this.quantidade)
+        }
+
+       var msg = '';
+       msg += 'Nome: '+Produto.nome +'<br>'+'Estoque: '+Produto.quantidade +'<br>'+'Preço: '+Produto.preco +'<br>';
+       document.querySelector('#output').innerHTML = msg;
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array exercicio 2</title>
+</head>
+<body>
+    <script>
+        //mostrar numeros pares e somar
+        var num = new Array(25,30,45,28,0,12,78,64)
+        var Resultado = somaOsPares(num)
+        alert('A soma dos pares é: '+Resultado)
+        
+        function somaOsPares(num){
+        var soma =0; 
+        for(var i= 0 ;i<num.length;i++){
+        console.log(num[i]);
+       
+            if(!isNaN(num[i]) && num[i]%2===0){
+                soma+=num[i];
+            }
+        }
+         return soma
+       }
+    </script>
+    </body>
+</html>
